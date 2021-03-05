@@ -13,7 +13,7 @@ int main()
 {
 	scanf("%d", &n);
 	cin.ignore();
-	getline(cin, plans);
+	getline(cin, plans); //한 라인 입력
 
 	for (int i = 0; i < plans.size(); i++) {
 		char plan = plans[i];
@@ -25,7 +25,7 @@ int main()
 				ny = y + dy[j];
 			}
 		}
-		if (nx<1 || ny<1 || nx>n || ny>n) continue;
+		if (nx<1 || ny<1 || nx>n || ny>n) continue; //예외상황
 
 		x = nx;
 		y = ny;
